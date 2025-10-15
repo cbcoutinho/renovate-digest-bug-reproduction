@@ -1,6 +1,6 @@
 {
   "registryAliases": {
-    "docker.io": "public.ecr.aws/docker"
+    "docker.io": "harbor.internal.coutinho.io/docker.io"
   },
   "packageRules": [
     {
