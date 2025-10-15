@@ -1,4 +1,7 @@
 {
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "registryAliases": {
     "docker.io": "harbor.internal.coutinho.io/docker.io"
   },
