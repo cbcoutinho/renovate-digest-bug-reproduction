@@ -5,9 +5,23 @@
   "packageRules": [
     {
       "description": "official images to docker.io",
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["/^[a-z-]+$/"],
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/^[a-z-]+$/"
+      ],
       "replacementNameTemplate": "docker.io/library/{{{packageName}}}"
+    },
+    {
+      "description": "non-official images to docker.io",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/^[a-z-]+/[a-z-]+$/"
+      ],
+      "replacementNameTemplate": "docker.io/{{ `{{{packageName}}}` }}"
     }
   ]
 }
