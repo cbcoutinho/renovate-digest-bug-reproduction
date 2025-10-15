@@ -21,7 +21,7 @@
       "matchPackageNames": [
         "/^[a-z-]+/[a-z-]+$/"
       ],
-      "replacementNameTemplate": "docker.io/{{ `{{{packageName}}}` }}"
+      "replacementNameTemplate": "docker.io/{{{packageName}}}"
     }
   ]
 }
