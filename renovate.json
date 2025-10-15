@@ -1,0 +1,13 @@
+{
+  "registryAliases": {
+    "docker.io": "harbor.example.com/docker.io"
+  },
+  "packageRules": [
+    {
+      "description": "official images to docker.io",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["/^[a-z-]+$/"],
+      "replacementNameTemplate": "docker.io/library/{{{packageName}}}"
+    }
+  ]
+}
